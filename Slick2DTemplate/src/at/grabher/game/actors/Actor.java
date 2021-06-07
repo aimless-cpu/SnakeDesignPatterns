@@ -5,6 +5,6 @@ import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
 
 interface Actor {
-    public void update(GameContainer gameContainer, int delta) throws SlickException;
-    public void render(GameContainer gameContainer, Graphics graphics) throws SlickException;
+    void update(GameContainer gameContainer, int delta) throws SlickException;
+    void render(GameContainer gameContainer, Graphics graphics) throws SlickException;
 }

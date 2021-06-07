@@ -12,7 +12,7 @@ public class SnakeGame extends BasicGame {
     public static final int GRID_SIZE = 40;
     public static final int CLOCK = 500;
 
-    private ElementSnake elementSnake;
+    private ElementSnake elementSnake, test;
     private List<ElementSnake> snakeList;
 
 
@@ -23,21 +23,30 @@ public class SnakeGame extends BasicGame {
     @Override
     public void init(GameContainer gameContainer) throws SlickException {
 
-        this.snakeList = new LinkedList<>();
+//        this.snakeList = new LinkedList<>();
+//
+//        for (int i = 0; i < 3; i++) {
+//            elementSnake = new ElementSnake(i + 3,3);
+//            this.snakeList.add(elementSnake);
+//        }
 
-        for (int i = 0; i < 3; i++) {
-
-        }
+        test = new ElementSnake(5,5);
 
     }
 
     @Override
-    public void update(GameContainer gameContainer, int i) throws SlickException {
-
+    public void update(GameContainer gameContainer, int delta) throws SlickException {
+//        for (ElementSnake elementSnake : this.snakeList) {
+//            elementSnake.update(gameContainer, delta);
+//        }
     }
 
     @Override
     public void render(GameContainer gameContainer, Graphics graphics) throws SlickException {
+//        for (ElementSnake elementSnake : this.snakeList) {
+//            elementSnake.render(gameContainer, graphics);
+//        }
+        test.render(gameContainer, graphics);
 
     }
 
