@@ -1,6 +1,6 @@
 package at.grabher.game.movements;
 
-public class Movement {
+public interface MovementStrategies {
 
 
 }
