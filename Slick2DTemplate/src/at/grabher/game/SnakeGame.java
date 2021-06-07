@@ -12,8 +12,6 @@ public class SnakeGame extends BasicGame {
     public static final int GRID_SIZE = 40;
     public static final int CLOCK = 500;
 
-    private ElementSnake elementSnake, test;
-    private List<ElementSnake> snakeList;
 
 
     public SnakeGame(String title) {
@@ -23,15 +21,6 @@ public class SnakeGame extends BasicGame {
     @Override
     public void init(GameContainer gameContainer) throws SlickException {
 
-//        this.snakeList = new LinkedList<>();
-//
-//        for (int i = 0; i < 3; i++) {
-//            elementSnake = new ElementSnake(i + 3,3);
-//            this.snakeList.add(elementSnake);
-//        }
-
-        test = new ElementSnake(5,5);
-
     }
 
     @Override
@@ -39,6 +28,7 @@ public class SnakeGame extends BasicGame {
 //        for (ElementSnake elementSnake : this.snakeList) {
 //            elementSnake.update(gameContainer, delta);
 //        }
+
     }
 
     @Override
@@ -46,14 +36,14 @@ public class SnakeGame extends BasicGame {
 //        for (ElementSnake elementSnake : this.snakeList) {
 //            elementSnake.render(gameContainer, graphics);
 //        }
-        test.render(gameContainer, graphics);
+//        test.render(gameContainer, graphics);
 
     }
 
     public static void main (String[]argv){
 
         try {
-            AppGameContainer container = new AppGameContainer(new SnakeGame("plain snake with DesignPatterns..."));
+            AppGameContainer container = new AppGameContainer(new SnakeGame("plain snake DesignPatterns"));
             container.setDisplayMode(800, 600, false);
             container.start();
         } catch (SlickException e) {
