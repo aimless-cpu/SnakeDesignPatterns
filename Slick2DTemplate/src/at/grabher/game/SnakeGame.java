@@ -1,7 +1,10 @@
 package at.grabher.game;
 
 import at.grabher.game.actors.Element;
+import at.grabher.game.actors.ElementSnake;
 import org.newdawn.slick.*;
+
+import java.util.LinkedList;
 import java.util.List;
 
 public class SnakeGame extends BasicGame {
@@ -9,7 +12,9 @@ public class SnakeGame extends BasicGame {
     public static final int GRID_SIZE = 40;
     public static final int CLOCK = 500;
 
-    private List<Element> actors;
+    private ElementSnake elementSnake;
+    private List<ElementSnake> snakeList;
+
 
     public SnakeGame(String title) {
         super(title);
@@ -17,6 +22,12 @@ public class SnakeGame extends BasicGame {
 
     @Override
     public void init(GameContainer gameContainer) throws SlickException {
+
+        this.snakeList = new LinkedList<>();
+
+        for (int i = 0; i < 3; i++) {
+
+        }
 
     }
 

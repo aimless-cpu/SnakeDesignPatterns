@@ -1,2 +1,5 @@
-package at.grabher.game.actors;public interface CollisionActor {
+package at.grabher.game.actors;
+
+interface CollisionActor extends Actor {
+
 }
