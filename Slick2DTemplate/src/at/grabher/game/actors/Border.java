@@ -3,13 +3,8 @@ package at.grabher.game.actors;
 import org.newdawn.slick.GameContainer;
 import org.newdawn.slick.Graphics;
 import org.newdawn.slick.SlickException;
-import org.newdawn.slick.geom.Shape;
 
-public class ElementPoint extends Element{
-
-    public ElementPoint(int x, int y) {
-        super(x, y);
-    }
+public class Border implements Actor{
 
     @Override
     public void update(GameContainer gameContainer, int delta) throws SlickException {
@@ -20,5 +15,4 @@ public class ElementPoint extends Element{
     public void render(GameContainer gameContainer, Graphics graphics) throws SlickException {
 
     }
-
 }

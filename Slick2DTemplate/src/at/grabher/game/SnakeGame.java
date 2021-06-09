@@ -3,6 +3,7 @@ package at.grabher.game;
 import at.grabher.game.actors.Element;
 import at.grabher.game.actors.ElementSnake;
 import org.newdawn.slick.*;
+import org.newdawn.slick.util.pathfinding.navmesh.Link;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -11,8 +12,8 @@ public class SnakeGame extends BasicGame {
 
     public static final int GRID_SIZE = 40;
     public static final int CLOCK = 500;
-
-
+    private List<ElementSnake> snakeList;
+    private ElementSnake elementSnake;
 
     public SnakeGame(String title) {
         super(title);
@@ -20,6 +21,16 @@ public class SnakeGame extends BasicGame {
 
     @Override
     public void init(GameContainer gameContainer) throws SlickException {
+
+        this.snakeList = new LinkedList<>();
+
+        for (int i = 0; i < 3; i++) {
+            elementSnake = new ElementSnake(i + 3, 3);
+            this.snakeList.add(0 + i, elementSnake);
+        }
+
+
+
 
     }
 
@@ -29,6 +40,7 @@ public class SnakeGame extends BasicGame {
 //            elementSnake.update(gameContainer, delta);
 //        }
 
+
     }
 
     @Override
@@ -36,7 +48,7 @@ public class SnakeGame extends BasicGame {
 //        for (ElementSnake elementSnake : this.snakeList) {
 //            elementSnake.render(gameContainer, graphics);
 //        }
-//        test.render(gameContainer, graphics);
+
 
     }
 

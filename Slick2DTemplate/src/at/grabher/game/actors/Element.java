@@ -1,13 +1,12 @@
 package at.grabher.game.actors;
 
-public abstract class Element implements Actor{
+public abstract class Element extends CollisionActor {
     protected int x,y;
 
     public Element(int x, int y) {
         this.x = x;
         this.y = y;
     }
-
 
     public int getX() {
         return x;
